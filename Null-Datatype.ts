@@ -1,10 +1,19 @@
-const userName: string | null = null;
+let coupon : string | null = null;
 
-function showname(): string {
-    if (userName === null) {
-        return "No name provided";
+function getDiscount (): number {
+    if(coupon === null)
+    {
+        return 0;
     }
-    return userName.toUpperCase(); // ✅ Safe: null is ruled out
+    return coupon === "SAVE20" ? 20:0;
 }
 
-showname();
+console.log(getDiscount());
+
+coupon = "SAVE20";
+console.log(getDiscount());
+
+coupon = null ;
+console.log(getDiscount());
+
+

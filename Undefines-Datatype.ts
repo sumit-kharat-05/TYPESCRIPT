@@ -1,12 +1,21 @@
-interface order
+interface signupForm
 {
-    id:number;
-    item:string;
-    instructions?:string;
+    name:string;
+    email:string;
+    referelCode?:string;
 }
 
-const order1:order = {id:"01",item:"Pizza",Instructions:"Extra Cheese"};
-const order2:order = {id:"02",item:"Sandwich",Instructions:"No Mayo"};
-const order3:order = {id:"03",item:"Pasta"} 
+const form1:signupForm = {name:"Sumit" , email:"sumit@gmail.com",referelCode:"FRIEND50"};
+const form2:signupForm = {name:"Amit" , email:"amit@gmail.com"};
 
-console.log(order3.instructions);
+function getBonus(form:signupForm):number
+{
+    if(form.referelCode === undefined)
+    {
+        return 0;
+    }
+    return 50;
+}
+
+console.log(getBonus(form1));
+console.log(getBonus(form2));

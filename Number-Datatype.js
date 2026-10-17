@@ -1,4 +1,3 @@
-"use strict";
 var num1 = 50;
 var num2 = 50;
 var total = num1 + num2;
@@ -8,3 +7,4 @@ let itemQuantity = 3;
 let gstRate = 0.18;
 let total1 = itemPrice * itemQuantity * (1 + gstRate);
 console.log(total1);
+export {};

@@ -1,5 +1,11 @@
-"use strict";
-const order1 = { id: "01", item: "Pizza", Instructions: "Extra Cheese" };
-const order2 = { id: "02", item: "Sandwich", Instructions: "No Mayo" };
-const order3 = { id: "03", item: "Pasta" };
-console.log(order3.instructions);
+const form1 = { name: "Sumit", email: "sumit@gmail.com", referelCode: "FRIEND50" };
+const form2 = { name: "Amit", email: "amit@gmail.com" };
+function getBonus(form) {
+    if (form.referelCode === undefined) {
+        return 0;
+    }
+    return 50;
+}
+console.log(getBonus(form1));
+console.log(getBonus(form2));
+export {};
