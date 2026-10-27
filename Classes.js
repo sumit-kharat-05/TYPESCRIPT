@@ -10,6 +10,4 @@ class User {
     }
 }
 const userDetails = new User("sumit", 21);
-
-console.log(userDetails.getData());
 export {};
