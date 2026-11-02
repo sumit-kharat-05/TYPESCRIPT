@@ -24,7 +24,7 @@ return collegeData;
 getCollegeData1({name:'sumit',mobNo:123,email:'sumit@123',college:'GHRCEMN',branch:'DS'})
 console.log(getCollegeData1({name:'sumit',mobNo:123,email:'sumit@123',college:'GHRCEMN',branch:'DS'}));
 
-function getCollegeData2 (collegeData : readonly <collegeData>) 
+function getCollegeData2 (collegeData : Readonly <collegeData>) 
 {
 return collegeData;
 
